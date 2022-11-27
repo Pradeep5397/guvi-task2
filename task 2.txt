@@ -1,0 +1,23 @@
+[root@ip-172-31-9-254 ec2-user]# cat >home.txt
+hello friends 
+i am studying in guvi
+in devops course
+[root@ip-172-31-9-254 ec2-user]# ls -al
+total 16
+drwx------ 3 ec2-user ec2-user  90 Nov 27 03:37 .
+drwxr-xr-x 7 root     root      68 Nov 27 03:23 ..
+-rw-r--r-- 1 ec2-user ec2-user  18 Jul 15  2020 .bash_logout
+-rw-r--r-- 1 ec2-user ec2-user 193 Jul 15  2020 .bash_profile
+-rw-r--r-- 1 ec2-user ec2-user 231 Jul 15  2020 .bashrc
+-rw-r--r-- 1 root     root      54 Nov 27 03:38 home.txt
+drwx------ 2 ec2-user ec2-user  29 Nov 27 03:13 .ssh
+[root@ip-172-31-9-254 ec2-user]# chmod 467 home.txt
+[root@ip-172-31-9-254 ec2-user]# ls -al
+total 16
+drwx------ 3 ec2-user ec2-user  90 Nov 27 03:37 .
+drwxr-xr-x 7 root     root      68 Nov 27 03:23 ..
+-rw-r--r-- 1 ec2-user ec2-user  18 Jul 15  2020 .bash_logout
+-rw-r--r-- 1 ec2-user ec2-user 193 Jul 15  2020 .bash_profile
+-rw-r--r-- 1 ec2-user ec2-user 231 Jul 15  2020 .bashrc
+-r--rw-rwx 1 root     root      54 Nov 27 03:38 home.txt
+drwx------ 2 ec2-user ec2-user  29 Nov 27 03:13 .ssh
